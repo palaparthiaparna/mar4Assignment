@@ -1,0 +1,13 @@
+list=[1,2,1,4]
+
+sorted_list=sorted(list)
+
+duplicates=[]
+
+for i in sorted_list:
+     if sorted_list.count(i)>1:
+            if i not in duplicates:
+                duplicates.append(i)
+
+print("count is", len(duplicates))
+
